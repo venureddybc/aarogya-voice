@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aarogya Voice - multilingual health information assistant demo">
+  <title>Aarogya Voice | Health Assistant</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">✚ Aarogya Voice</div>
+    <span class="tag">Multilingual health information demo</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">YOUR VOICE. YOUR LANGUAGE.</p>
+      <h1>Health information, made easier.</h1>
+      <p>Ask a general health question by typing or speaking. Choose Kannada, Telugu, Hindi, Tamil or English.</p>
+    </section>
+
+    <section class="panel">
+      <label for="language">Choose your language</label>
+      <select id="language">
+        <option value="en-IN">English</option>
+        <option value="kn-IN">ಕನ್ನಡ (Kannada)</option>
+        <option value="te-IN">తెలుగు (Telugu)</option>
+        <option value="hi-IN">हिन्दी (Hindi)</option>
+        <option value="ta-IN">தமிழ் (Tamil)</option>
+      </select>
+
+      <label for="question">Type your question</label>
+      <textarea id="question" rows="3" placeholder="Example: How can I improve my sleep?"></textarea>
+
+      <div class="actions">
+        <button id="askBtn">Get answer</button>
+        <button id="micBtn" class="secondary">🎙 Speak</button>
+        <button id="speakBtn" class="secondary">🔊 Read answer</button>
+      </div>
+      <p id="status" class="status" aria-live="polite">Ready.</p>
+
+      <div class="answer">
+        <h2>Assistant response</h2>
+        <p id="answer">Your general health information will appear here.</p>
+      </div>
+    </section>
+
+    <aside class="notice">
+      <strong>Important:</strong> This is an educational prototype, not a doctor or diagnostic tool.
+      It does not provide a diagnosis or replace professional medical advice. For severe or
+      life-threatening symptoms, seek emergency help immediately. In India, call 112.
+    </aside>
+  </main>
+
+  <footer>Built as a student prototype · Aarogya Voice</footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
